@@ -1,4 +1,10 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import vue from "@astrojs/vue";
+import react from "@astrojs/react";
+import solid from "@astrojs/solid-js";
+import svelte from "@astrojs/svelte";
+import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  integrations: [vue(), react(), solid(), svelte(), tailwind()],
+});
