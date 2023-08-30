@@ -1,6 +1,6 @@
 /** @jsxImportSource react */
 import { useStore } from "@nanostores/react";
-import { counter, increase } from "../stores/counter";
+import { counter, increase } from "../../stores/counter";
 
 export default function ReactCounter() {
   const $counter = useStore(counter);

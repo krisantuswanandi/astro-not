@@ -1,6 +1,6 @@
 /** @jsxImportSource solid-js */
 import { useStore } from "@nanostores/solid";
-import { counter, increase } from "../stores/counter";
+import { counter, increase } from "../../stores/counter";
 
 export default function SolidCounter() {
   const $counter = useStore(counter);

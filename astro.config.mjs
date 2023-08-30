@@ -6,5 +6,15 @@ import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  integrations: [vue(), react(), solid(), svelte(), tailwind()],
+  integrations: [
+    vue(),
+    svelte(),
+    tailwind(),
+    react({
+      include: ["**/react/*"],
+    }),
+    solid({
+      include: ["**/solid/*"],
+    }),
+  ],
 });

@@ -1,5 +1,5 @@
 <script>
-  import { counter, increase } from "../stores/counter";
+  import { counter, increase } from "../../stores/counter";
 </script>
 
 <div class="flex flex-col items-center">
